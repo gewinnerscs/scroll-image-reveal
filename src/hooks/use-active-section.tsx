@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 type Section = 'hero' | 'insights' | 'impact' | 'connect';
 
-export function useActiveSection() {
+export function useActiveSection(): Section {
   const [activeSection, setActiveSection] = useState<Section>('hero');
 
   useEffect(() => {
